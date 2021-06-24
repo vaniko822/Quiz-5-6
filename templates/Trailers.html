@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %} თრეილერები {% endblock %}
+{% block content %}
+    {{ super() }}
+    <legend><div align="left" style="color: white; margin-left: 40px; margin-top: 15px; margin-bottom: 10px">თრეილერები</div></legend>
+    <div class="film-list">
+        <div class="trailer-list-border">
+        <article>
+            <div class="img-src-trailer-container">
+                <img src="static/img/black-widow.jpg">
+            </div>
+            <div class="trailers-name">
+                Black Widow
+            </div>
+            <div class="trailer-video-black-widow">
+            <iframe width="645" height="363" src="https://www.youtube.com/embed/ybji16u608U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </article>
+        </div>
+
+        <div class="trailer-list-border">
+        <article>
+            <div class="img-src-trailer-container">
+                <img src="static/img/jungle cruise.jpg">
+            </div>
+            <div class="trailers-name">
+                Jungle Cruise
+            </div>
+            <div class="trailer-video-jungle-cruise">
+            <iframe width="645" height="363" src="https://www.youtube.com/embed/f_HvoipFcA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </article>
+        </div>
+
+        <div class="trailer-list-border">
+        <article>
+            <div class="img-src-trailer-container">
+                <img src="static/img/snake-eyes.jpg">
+            </div>
+            <div class="trailers-name">
+                Snake eyes
+            </div>
+            <div class="trailer-video-snake-eyes">
+            <iframe width="645" height="363" src="https://www.youtube.com/embed/BIVnKZrSUH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </article>
+        </div>
+    </div>
+{% endblock %}

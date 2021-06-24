@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block title %} TWO BY TWO: OVERBOARD! - უუპს! თავგადასავალი გრძელდება {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="film-list-border">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/oops.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 5.9</div>
+            </div>
+            <div class="films-name">
+                უუპს!
+            </div>
+            <div class="description_of_film"><br>აღწერა: სხვადასხვა ცხოველებით სავსე ნოეს კიდობანი ღია ზღვაში მიცურავს, რომლის ბორტზე საუკეთესო მეგობრები ფინი და ლეა იმყოფებიან. მაგრამ რამდენიმე კვირა ხმელეთისგან შორს მყოფი ცხოველები საკვები მარაგის დეფიციტის წინაშე აღმოჩნდებიან, რამაც შეიძლება ხორციჭამია და ბალახიჭამია ცხოველებს შორის დროებითი მშვიდობა ნებისმიერ წამს დაარღვიოს. თუმცა, მთელი რიგი მოვლენების შემდეგ, გმირებს უკანასკნელ საკვებ მარაგებთან ერთად შემთხვევით ზღვაში გადაყრიან. შედეგად, ლეა, ფინი და მათი ახალი მეგობარი ჟელი შორეულ კუნძულზე მოხვდენიან, და ახლა სანამ მრისხანე ვულკანის საფრთხის ქვეშ, ჰარმონიაში მცხოვრები უცნაური არსებით სავსე კოლონიაში ფინი გონზე მოდის, მან დროის, მოქცევების და საშინელი მიწისძვრების წინააღმდეგ ბრძოლაში, თავისი ოჯახი, მეგობრები და მთელი კოლონია სრული განადგურებისაგან უნდა გადაარჩინოს.</div>
+        </article>
+    </div>
+<div class="video-player-p">
+<iframe style="margin-left: 50px; margin-top: 50px; margin-bottom: 800px" width="700" height="310" src="https://api.adjaranet.com/api/v1/movies/878509091/files/1455980?source=adjaranet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock %}

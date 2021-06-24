@@ -1,0 +1,19 @@
+{%  extends 'base.html' %}
+ {% block title %} მთავარი გვერდი {%  endblock %}
+
+{% block content %}
+<h3 style="color: white; margin-left: 15px; margin-top: 20px;">ფილმის დამატება</h3>
+<h5 style="color: white; margin-left: 15px;">მოგვწერეთ ფილმის სახელი, რომელიც გსურთ რომ გავახმოვანოთ</h5>
+    <form method="post" style="width:50%; margin-left: 10px">
+      <div class="form-group">
+          <input type="text" name="username1" class="form-control" placeholder="თქვენი სახელი"><br>
+        <input type="text" name="title" class="form-control" placeholder="ფილმის სახელი"><br>
+      </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for cat, msg in messages %}
+                <p class={{cat}}>{{msg}}</p>
+            {% endfor %}
+        {% endwith %}
+    <button type="submit" class="btn btn-primary">ფილმის დამატება</button>
+    </form>
+{% endblock %}

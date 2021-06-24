@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block title %} მთავარი გვერდი {% endblock %}
+{% block content %}
+    {{ super() }}
+
+    <center><div class="container">
+                <div class="buttoncontainer">
+                    <a href="#element1"><button></button></a>
+                    <a href="#element2"><button></button></a>
+                    <a href="#element3"><button></button></a>
+                </div>
+            <a href="/avangers_endgame"><div class="item" id="element1" style="background: url('static/img/avangers-ad-img.png');"></div></a>
+            <div class="item" id="element2" style="background: url('static/img/kino-ad-img.png');"></div>
+            <a href="/ლეპტოპები"><div class="item" id="element3" style="background: url('static/img/partnership-ad-img.png');"></div></a>
+    </div>
+    </center>
+
+    <legend><div align="left" style="color: white; margin-left: 40px; margin-top: 15px; margin-bottom: 10px">ფილმები</div></legend>
+    <div class="film-list">
+        <div class="film-list-border">
+        <a href="/the_vault">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/the-vault.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 6.4</div>
+            </div>
+            <div class="films-name">
+                საცავი
+            </div>
+        </article>
+            </a> </div>
+
+        <div class="film-list-border">
+        <a href="/interstellar">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/interstellar-img.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.6</div>
+            </div>
+            <div class="films-name">
+                ინტერსტელარი
+            </div>
+        </article>
+            </a> </div>
+
+        <div class="film-list-border">
+        <a href="/inception">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/inception.jpeg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.8</div>
+            </div>
+            <div class="films-name">
+                დასაწყისი
+            </div>
+        </article>
+            </a> </div>
+
+        <div class="film-list-border">
+        <a href="/Shawshenk_redemption">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/Shawshank-redemption.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 9.3</div>
+            </div>
+            <div class="films-name">
+                გაქცევა შოუშენკიდან
+            </div>
+        </article>
+            </a> </div>
+
+        <div class="film-list-border">
+        <a href="/The_god_father">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/god-father.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 9.2</div>
+            </div>
+            <div class="films-name">
+                ნათლია
+            </div>
+        </article>
+            </a>
+    </div>
+
+        <div class="film-list-border">
+        <a href="/The_dark_knight">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/the-dark-knight.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 9.0</div>
+            </div>
+            <div class="films-name">
+                ბნელი რაინდი
+            </div>
+        </article>
+            </a>
+    </div>
+
+        <div class="film-list-border">
+        <a href="/avangers_endgame">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/avangers_endgame.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.4</div>
+            </div>
+            <div class="films-name">
+                შურისმაძიებლები
+            </div>
+        </article>
+            </a>
+    </div>
+
+        <div class="film-list-border">
+        <a href="/oops">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/oops.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 5.9</div>
+            </div>
+            <div class="films-name">
+                უუპს!
+            </div>
+        </article>
+            </a>
+    </div>
+
+        <div class="film-list-border">
+        <a href="/lord_of_the_rings_the_return_of_the_king">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/lord-of-the-rings-the-return-of-the-king.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.9</div>
+            </div>
+            <div class="films-name">
+                ბეჭდების მბრძანებელი
+            </div>
+        </article>
+            </a>
+    </div>
+        </div>
+
+
+{% endblock %}

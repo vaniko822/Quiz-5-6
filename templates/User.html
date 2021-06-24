@@ -1,0 +1,7 @@
+{% extends 'index.html' %}
+{% block title %} მომხმარებელი {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="Hello-page">მოგესალმები, {{ session['username'] }}</div>
+
+{% endblock %}

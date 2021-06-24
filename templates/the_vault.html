@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} The Vault - საცავი {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="film-list-border">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/the-vault.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 6.4</div>
+            </div>
+            <div class="films-name">
+                საცავი
+            </div>
+            <div class="description_of_film"><br>აღწერა: ტომი – საინჟინრო ფაკულტეტის გამორჩეული კურსდამთავრებულია, რომელიც ესპანეთში მდებარე ერთ-ერთი ბანკის საცავით არის დაინტერესებული. ბანკის შენობა 100 წლის წინ გეგმის გარეშე აშენდა და უსაფრთხოების სისტემა მიწისქვეშა მდინარეს მოიცავს - საგანგებო სიტუაციის დროს დაცულ ტერიტორიას წყლით ავსებს. როდესაც მთავარი გმირი შეიტყობს, რომ ზუდტად ამ ბანკის სეიფში მხოლოდ 10 დღით შეინახება ლეგენდარული საგანძური, ის ქარიზმატულ არტ-დილერთან, უოლტერთან ერთად ბანკში შეღწვის დეტალურ გეგმას შეიმუშავებს. ახლა მათ ხოლოდ 90 წუთი აქვთ, რადგან ბანკის თნამშრომლები 2010 წლის ფეხბურთის მსოფლიო ჩემპიონატის ფინალის ყურებით იქნებიან დაკავებულები, სადაც ესპანეთის ეროვნული საფეხბურთო გუნდი ასპარეზობს.</div>
+        </article>
+    </div>
+<div class="video-player-p">
+<iframe style="margin-left: 50px; margin-top: 50px; margin-bottom: 800px" width="700" height="310" src="https://api.adjaranet.com/api/v1/movies/878515171/files/1460616?source=adjaranet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock %}

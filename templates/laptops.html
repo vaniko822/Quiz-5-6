@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} ლეპტოპები {% endblock %}
+{% block content %}
+    {{ super() }}
+    {% for i in all_notebooks %}
+    <div class="notebooks-list-border">
+        <article>
+            <div class="img-src-film-container">
+                <img src='static/img/notebook.png'>
+            </div>
+            <div class="notebooks-price">
+                <div class="imdb-films-font-size">{{i[1]}}ლ</div>
+            </div>
+            <div class="notebooks-name">
+                {{i[0]}}
+            </div>
+        </article>
+    </div>
+    {% endfor %}
+<hr class="line">
+{% endblock %}

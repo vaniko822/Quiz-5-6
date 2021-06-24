@@ -1,0 +1,382 @@
+body {
+    background: #393C3B;
+}
+
+.footer-5 {
+    border-style: solid;
+    height: 150px;
+    background: #212529;
+    list-style-type: none;
+    margin-top: auto;
+    margin-top: 50px;
+}
+
+.site-name-footer {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.site-contact-footer {
+    text-align: center;
+}
+
+.site-info-footer{
+    text-align: center;
+}
+
+.site-developer-footer {
+    color: gray;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#LoginColor {
+    background: black;
+    color: white;
+    margin-left: 620px;
+}
+
+#Logout-Position {
+    margin-left: 520px;
+}
+
+#Create-account-color {
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+* {box-sizing: border-box}
+
+.container {
+  padding: 40px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #ff4343;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.form-registration {
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.form-registration-title {
+    margin-right: 420px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+b {
+    color: white;
+}
+
+.container-signin {
+    background: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#Login-Color {
+    text-decoration: none;
+    color: #848484;
+    margin-left: 10px;
+}
+
+.film-list-border {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    background: #989898;
+    display: block;
+    width: 350px;
+    height: 560px;
+    margin-left: 50px;
+    margin-top: 15px;
+    float: left;
+}
+
+img {
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.img-src-film-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.films-name {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.films-name:hover {
+    color: red;
+    transition: .5s;
+}
+
+.imdb-films {
+    border-style: solid;
+    border-color: #ffbb04;
+    background: #ffbb04;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+
+.film-year {
+    border-style: solid;
+    border-color: #ffbb04;
+    background: #ffbb04;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    margin-top: 50px;
+}
+
+.imdb-films-font-size {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+article {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    transition: .5s;
+    color: red;
+}
+
+.film-list {
+    width: 100%;
+    overflow: auto;
+}
+
+.video-player-p {
+    margin-left: 200px;
+}
+
+.trailer-list-border {
+    border-style: solid;
+    border-width: medium;
+    display: block;
+    width: 1000px;
+    height: 400px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+.img-src-trailer-container {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.trailers-name {
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.trailer-video-black-widow {
+    margin-left: 300px;
+    position: absolute;
+    top: 160px;
+    display: block;
+}
+
+.trailer-video-jungle-cruise {
+    margin-left: 300px;
+    position: absolute;
+    top: 580px;
+    display: block;
+}
+
+.trailer-video-snake-eyes {
+    margin-left: 300px;
+    position: absolute;
+    top: 990px;
+    display: block;
+}
+
+.description_of_film {
+    color: white;
+    width: 100%;
+}
+
+.Hello-page {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    left: 750px;
+}
+
+.film-add-text {
+    color: white;
+    margin-left: 20px;
+}
+
+.contact-name {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-map {
+    text-align: center;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.info {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.error {
+    color: darkred;
+    font-weight: bold;
+}
+
+.notebooks-content {
+    color: white;
+}
+
+.notebooks-price {
+    border-style: solid;
+    border-color: black;
+    background: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    margin-left: 250px;
+    margin-top: 5px;
+    color: white;
+}
+
+.notebooks-name {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.notebooks-list-border {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    background: #989898;
+    display: block;
+    width: 350px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 15px;
+    float: left;
+}
+
+.line {
+    margin-top: 27800px;
+}
+
+.container {
+    background-color: #393C3B;
+    width: 1200px;
+    height: 250px;
+    display: block;
+    overflow: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top: 20px;
+}
+.item {
+    min-width: 1200px;
+    background-size: cover;
+    height: 250px;
+}
+.buttoncontainer {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+}
+.button-ad {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+}
+.button-ad:hover {
+    background-color: red;
+    transition: 0.5s;
+    width: 17px;
+    height: 17px;
+}
+.button-ad:active {
+    transform: scale(1.2)
+}
+
+.laptops-img-src {
+    image-rendering: auto;
+}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} რეგისტრაცია {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="form-registration">
+        <div class="form-registration-title">რეგისტრაცია</div>
+        <form method="post" style="width:50%; text-align: center">
+      <div class="form-group">
+        <input type="text" name="email" class="form-control" placeholder="შეიყვანე ელ.ფოსტა"><br>
+        <input type="password" name="password" class="form-control" placeholder="შეიყვანე პაროლი"><br>
+        <input type="password" name="password-repeat" class="form-control"  placeholder="გაიმეორე პაროლი"><br>
+      </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for cat, msg in messages %}
+                <p class={{cat}}>{{msg}}</p>
+            {% endfor %}
+        {% endwith %}
+    <button type="submit" style="margin-bottom:10px; padding: 15px 32px; background: #ff4343; color: white;" class="btn btn-primary">შექმნა</button>
+            <div class="container-signin">
+        <p style="color: white;">უკვე გაქვს ექაუნთი? <a href="/ავტორიზაცია" id="Login-Color">ავტორიზაცია</a></p>
+      </div>
+    </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Interstellar - ინტერსტელარი {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="film-list-border">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/interstellar-img.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.6</div>
+            </div>
+            <div class="films-name">
+                ინტერსტელარი
+            </div>
+            <div class="description_of_film"><br>აღწერა: კოსმონავტების ჯგუფი გამოუცნობი სამყაროს გამოსაკვლევად მიემართება და თავისი ხომალდით დედამიწასთან ახლოს მდებარე შავ ხვრელში შეფრინდებიან. ის მათ საშუალებას მისცემს გადაადგილდნენ წარმოუდგენელ მანძილებზე...</div>
+        </article>
+    </div>
+<div class="video-player-p">
+<iframe style="margin-left: 50px; margin-top: 50px; margin-bottom: 800px" width="700" height="310" src="https://api.adjaranet.com/api/v1/movies/450141444/files/852334?source=adjaranet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock %}

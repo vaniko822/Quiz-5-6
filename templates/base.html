@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="{{url_for('static', filename='Styles.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/film.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="static/img/kino-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/ფილმები" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ფილმები
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/">ყველა ფილმი</a></li>
+            <li><a class="dropdown-item" href="#">ქართულად გახმოვანებული</a></li>
+            <li><a class="dropdown-item" href="#">ანიმაციური</a></li>
+            <li><a class="dropdown-item" href="#">ბიოგრაფიული</a></li>
+            <li><a class="dropdown-item" href="#">დეტექტივი</a></li>
+            <li><a class="dropdown-item" href="#">დოკუმენტური</a></li>
+            <li><a class="dropdown-item" href="#">დრამა</a></li>
+            <li><a class="dropdown-item" href="#">ვესტერნი</a></li>
+            <li><a class="dropdown-item" href="#">ისტორიული</a></li>
+            <li><a class="dropdown-item" href="#">კომედია</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/თრეილერები">თრეილერები</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/ლეპტოპები"><img src="static/img/imart.png"> </a>
+        </li>
+          <li>
+          {% if 'username' in session %}
+              <a class="nav-link" id="Logout-Position" href="/Logout">Logout</a>
+              {% endif %}
+        </li>
+        <li class="nav-item"> {% if 'username' not in session %}
+          <a class="nav-link" id="LoginColor" style="margin-left: 550px" aria-current="page" href="/ავტორიზაცია">ავტორიზაცია</a>
+        {% endif %}
+        </li>
+      </ul>
+      {% if 'username' in session %}
+          <a class="film-add-text"  aria-current="page" href="/add_film">ფილმის დამატება</a>
+        {% endif %}
+    </div>
+  </div>
+</nav>
+    {% block content %} {% endblock %}
+
+<footer>
+    <div class="footer-5">
+        <div class="site-name-footer"><a href="/"><img src="static/img/kino-logo.png"></a></div>
+        <li></li>
+        <li class="site-contact-footer"><a href="/კონტაქტი">კონტაქტი</a></li>
+        <li></li>
+        <li class="site-info-footer"><a href="/ჩვენსშესახებ">ჩვენ შესახებ</a></li>
+        <li></li>
+        <li class="site-developer-footer">© 2021 დამზადებულია Vaniko-ს მიერ</li>
+        <li></li>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

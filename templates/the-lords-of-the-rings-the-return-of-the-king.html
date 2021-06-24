@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block title %} ბეჭდების მბრძანებელი: ხელმწიფის დაბრუნება {% endblock %}
+{% block content %}
+    {{ super() }}
+    <div class="film-list-border">
+        <article>
+            <div class="img-src-film-container">
+                <img src="static/img/lord-of-the-rings-the-return-of-the-king.jpg">
+            </div>
+            <div class="imdb-films">
+                <div class="imdb-films-font-size">IMDB: 8.9</div>
+            </div>
+            <div class="films-name">
+                ბეჭდების მბრძანებელი
+            </div>
+            <div class="description_of_film"><br>აღწერა: ადამიანები, უკვდავი ელფები, შრომისმოყვარე გნომები და მამაცი ჰობიტები კიდევ ერთხელ ერთიანდებიან ბოროტ ძალებთან საბოლოო და გადამწყვეტი ბრძოლისათვის. ბნელეთის მეუფე თავის ურიცხვ ლაშქარს ამჯერად გონდორის სამეფოსაკენ აგზავნის. თუ ფროდო და სემი ვერ მოასწრებენ ძალაუფლების ბეჭდის განადგურებას, ბრძოლა შეიძლება საურონის წარმატებით დასრულდეს.</div>
+        </article>
+    </div>
+<div class="video-player-p">
+<iframe style="margin-left: 50px; margin-top: 50px; margin-bottom: 800px" width="700" height="310" src="https://api.adjaranet.com/api/v1/movies/5084/files/1324800?source=adjaranet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock %}
